@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/STL/STL (Standard Template Library).md",
+                "file": "DSA/Recurrsion/Recursion.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STL (Standard Template Library)"
+              "title": "Recursion"
             }
           }
         ]
@@ -207,6 +207,11 @@
   },
   "active": "c29e04b0d76f715c",
   "lastOpenFiles": [
+    "DSA/Recurrsion/Factorial.md",
+    "DSA/STL/STL (Standard Template Library).md",
+    "DSA/Recurrsion/Image/Stack_space.png",
+    "DSA/Recurrsion/Image/recursion_tree.png",
+    "DSA/Recurrsion/Image",
     "PDF Notes/Data.pdf",
     "PDF Notes",
     "Data.pdf",
@@ -234,7 +239,6 @@
     "DSA/Graph Theory/Topo Sort/Topological Sort.md",
     "DSA/Graph Theory/Topo Sort/Find Eventual Safe States.md",
     "DSA/Graph Theory/Topo Sort/Course Schedule II.md",
-    "DSA/Graph Theory/Problems On BFS-DFS/Flood Fill.md",
     "~$rshal Savaliya (2025BCS0046).docx",
     "Harshal Savaliya (2025BCS0046).docx",
     "DSA/Data_structure.canvas",
@@ -250,10 +254,6 @@
     "DSA/Graph Theory/Images/BFS Example.png",
     "DSA/Graph Theory/Images/Weighted Graph.png",
     "DSA/Graph Theory/Images",
-    "Pasted image 20260305221021.png",
-    "DSA/Graph Theory/Images/Unweighted.png",
-    "Pasted image 20260305220549.png",
-    "Dashboard/Projects",
-    "Dashboard"
+    "Pasted image 20260305221021.png"
   ]
 }
