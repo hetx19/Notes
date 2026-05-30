@@ -24,7 +24,7 @@
 
 ```cpp
 class Solution {
-public:
+  public:
 	void moveZeroes(vector<int> &nums) {
 		int n = nums.size();
 		vector<int> temp;
@@ -60,7 +60,7 @@ public:
 
 ```cpp
 class Solution {
-public:
+  public:
 	void moveZeroes(vector<int> &nums) {
 		int j = -1, n = nums.size();
 

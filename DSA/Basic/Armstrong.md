@@ -9,24 +9,28 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 
 ```cpp
-bool isArmStrong(int n) {
-	if (n < 0) {
-		return false;
-	}
+class Solution {
+  public:
+	bool isArmStrong(int n) {
+		if (n < 0) {
+			return false;
+		}
 	
-	if (n == 0) {
-		return true;
-	}
+		if (n == 0) {
+			return true;
+		}
 	
-	int len = log10(n) + 1;
-	int temp = n;
-	int number = 0;
-	while (temp != 0) {
-		int digit = (temp % 10);
-		number += pow(digit, len);
-		temp /= 10;
-	}
+		int len = log10(n) + 1;
+		int temp = n;
+		int number = 0;
+		
+		while (temp != 0) {
+			int digit = (temp % 10);
+			number += pow(digit, len);
+			temp /= 10;
+		}
 	
-	return (n == number);
-}
+		return (n == number);
+	}
+};
 ```

@@ -9,17 +9,20 @@ Time Complexity:
 1. Iterative Method
 
 ```cpp
-void insertionSort(vector<int>& arr) {
-    int n = arr.size();
+class Solution {
+  public:
+	void insertionSort(vector<int>& arr) {
+	    int n = arr.size();
 
-    for (int i = 0; i < n; i++) {
-	    int j = i;
-        while (j > 0 && arr[j - 1] > arr[j]) {
-            swap(arr[j - 1], arr[j]);
-            j--;
-        }
-    }
-}
+	    for (int i = 0; i < n; i++) {
+		    int j = i;
+	        while (j > 0 && arr[j - 1] > arr[j]) {
+	            swap(arr[j - 1], arr[j]);
+	            j--;
+	        }
+	    }
+	}
+};
 ```
 
 2. Recursive Method
@@ -30,18 +33,21 @@ void insertionSort(vector<int>& arr) {
   Space complexity: O(N) // Recursion Stack Space
 
 ```cpp
-void insertionSort(vector<int>& arr, int i, int n) {
-	if (i == n) {
-		return;
+class Solution {
+  public:
+	void insertionSort(vector<int>& arr, int i, int n) {
+		if (i == n) {
+			return;
+		}
+
+		int j = i;
+		while (j > 0 && arr[j - 1] > arr[j]) {
+	        swap(arr[j - 1], arr[j]);
+	        j--;
+	    }
+
+		insertionSort(arr, i + 1, n);
 	}
-
-	int j = i;
-	while (j > 0 && arr[j - 1] > arr[j]) {
-        swap(arr[j - 1], arr[j]);
-        j--;
-    }
-
-	insertionSort(arr, i + 1, n);
-}
+};
 ```
 

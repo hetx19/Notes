@@ -9,29 +9,32 @@
 ##### Output: `[0, 2, 4, 3, 1]`
 
 ```cpp
-void dfsTraversal(vector<vector<int>>& adj, vector<bool>& visited, int node, vector<int>& ans) {
-	visited[node] = true;
-	ans.push_back(node);
+class Solution {
+  public:
+	void dfsTraversal(vector<vector<int>>& adj, vector<bool>& visited, int node, vector<int>& ans) {
+		visited[node] = true;
+		ans.push_back(node);
 
-	for (auto it : adjList[node]) {
-		if (!visited[it]) {
-			dfsTraversal(adj, visited, it, ans);
+		for (auto it : adjList[node]) {
+			if (!visited[it]) {
+				dfsTraversal(adj, visited, it, ans);
+			}
 		}
 	}
-}
 
-vector<int> dfs(vector<vector<int>>& adj) {
-	int v = adj.size();
+	vector<int> dfs(vector<vector<int>>& adj) {
+		int v = adj.size();
 
-	vector<bool> visited(v, false);
-	vector<int> ans;
+		vector<bool> visited(v, false);
+		vector<int> ans;
 
-	dfsTraversal(adj, visited, 0, ans);
+		dfsTraversal(adj, visited, 0, ans);
 
-	return ans;
-}
+		return ans;
+	}
+};
 ```
 
 **Time Complexity:** O(V + 2E)
-**Space Complexity:** O(V) + O(V)
+**Space Complexity:** O(V) + O(V) → O(V)
 

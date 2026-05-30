@@ -10,13 +10,16 @@ O(1) → if the sorting algorithm is **in-place**
 O(n) → if a **copy of the array** is created before sorting
 
 ```cpp
-int largest(vector<int> &arr) {
-	vector<int> temp = arr;
-	int n = temp.size();
-	sort(temp.begin(), temp.end());
+class Solution {
+  public:
+	int largest(vector<int> &arr) {
+		vector<int> temp = arr;
+		int n = temp.size();
+		sort(temp.begin(), temp.end());
 
-	return temp[n - 1];
-}
+		return temp[n - 1];
+	}
+};
 ```
 
 ---
@@ -29,18 +32,20 @@ idea: Traverse the array and keep track of the maximum element seen so far.
 **Space Complexity** O(1)
 
 ```cpp
-int largest(vector<int> &arr) {
-	int largest = arr[0];
-	int n = arr.size();
+class Solution {
+	int largest(vector<int> &arr) {
+		int largest = arr[0];
+		int n = arr.size();
 
-	for (int i = 1; i < n; i++) {
-		if (arr[i] > largest) {
-			largest = arr[i];
+		for (int i = 1; i < n; i++) {
+			if (arr[i] > largest) {
+				largest = arr[i];
+			}
 		}
-	}
 
-	return largest;
-}
+		return largest;
+	}
+};
 ```
 
 ---

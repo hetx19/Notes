@@ -25,7 +25,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 ```cpp
 class Solution {
-public:
+  public:
 	int removeDuplicates(vector<int> &nums) {
 		int n = nums.size();
 		set<int> st;
@@ -58,7 +58,7 @@ public:
 
 ```cpp
 class Solution {
-public:
+  public:
 	int removeDuplicates(vector<int> &nums) {
 		if (nums.empty()) return 0;
 

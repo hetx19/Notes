@@ -19,17 +19,20 @@ Idea: Visit the next index until you find the element
 **Space Complexity** O(1)
 
 ```cpp
-int linearSearch(vector<int> &arr, int k) {
-	int n = arr.size();
+class Solution {
+  public:
+	int linearSearch(vector<int> &arr, int k) {
+		int n = arr.size();
 
-	for (int i = 0; i < n; i++) {
-		if (arr[i] == k) {
-			return i;
+		for (int i = 0; i < n; i++) {
+			if (arr[i] == k) {
+				return i;
+			}
 		}
-	}
 
-	return -1;
-}
+		return -1;
+	}
+};
 ```
 
 ---

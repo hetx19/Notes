@@ -8,17 +8,20 @@ Idea: Traverse the array and check if every element is greater than or equal to 
 **Space Complexity** O(1)
 
 ```cpp
-bool isSorted(vector<int> &arr) {
-	int n = arr.size();
+class Solution {
+  public:
+	bool isSorted(vector<int> &arr) {
+		int n = arr.size();
 
-	for (int i = 1; i < n; i++) {
-		if (arr[i] < arr[i - 1]) {
-			return false;
+		for (int i = 1; i < n; i++) {
+			if (arr[i] < arr[i - 1]) {
+				return false;
+			}
 		}
-	}
 
-	return true;
-}
+		return true;
+	}
+};
 ```
 
 ---

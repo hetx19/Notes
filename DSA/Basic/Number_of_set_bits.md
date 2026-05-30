@@ -8,18 +8,21 @@ Time Complexity: O(log n) (number of bits in `n`)
 Space Complexity: O(1)
 
 ```cpp
-int hammingWeight(int n) {
-	int count = 0;
+class Solution {
+  public:
+	int hammingWeight(int n) {
+		int count = 0;
 	
-	while (n > 0) {
-		if (n & 1) {
-			count++;
+		while (n > 0) {
+			if (n & 1) {
+				count++;
+			}
+			n >>= 1;
 		}
-		n >>= 1;
-	}
 	
-	return count;
-}
+		return count;
+	}
+};
 ```
 
 Optimal Approach: (Brian Kernighan’s Algorithm)
@@ -30,16 +33,19 @@ Time Complexity: O(k) where `k` is the number of set bits
 Space Complexity: O(1)
 
 ```cpp
-int hammingWeight(int n) {
-	int count = 0;
+class Solution {
+  public:
+	int hammingWeight(int n) {
+		int count = 0;
 	
-	while (n > 0) {
-		count++;
-		n = n & (n - 1);
+		while (n > 0) {
+			count++;
+			n = n & (n - 1);
+		}
+	
+		return count;
 	}
-	
-	return count;
-}
+};
 ```
 
 **_Important Note_**

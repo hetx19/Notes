@@ -29,79 +29,86 @@ There can be multiple valid orderings.
 #### By DFS Traversal
 
 ```cpp
-void dfs(vector<vector<int>> &adj, vector<bool> &visited, stack<int> &st, int node) {
-	visited[node] = true;
+class Solution {
+  private:
+	void dfs(vector<vector<int>> &adj, vector<bool> &visited, stack<int> &st, int node) {
+		visited[node] = true;
 
-	for (auto it : adj[node]) {
-		if (!visited[it]) {
-			dfs(adj, visited, st, it);
+		for (int it : adj[node]) {
+			if (!visited[it]) {
+				dfs(adj, visited, st, it);
+			}
 		}
+
+		st.push(node);
 	}
 
-	st.push(node);
-}
+  public:
+	vector<int> TopoSort(vector<vector<int>> &adj) {
+		int V = adj.size();
+		vector<bool> visited(V, false);
 
-vector<int> TopoSort(vector<vector<int>> &adj) {
-	int V = adj.size();
-	vector<bool> visited(V, false);
+		stack<int> st;
 
-	stack<int> st;
-
-	for (int i = 0; i < V; i++) {
-		if (!visited[i]) {
-			dfs(adj, visited, st, i);
+		for (int i = 0; i < V; i++) {
+			if (!visited[i]) {
+				dfs(adj, visited, st, i);
+			}
 		}
+
+		vector<int> ans;
+
+		while (!st.empty()) {
+			ans.push_back(st.top());
+			st.pop();
+		}
+
+		return ans;
 	}
-
-	vector<int> ans;
-
-	while (!st.empty()) {
-		ans.push_back(st.top());
-		st.pop();
-	}
-
-	return ans;
-}
+};
 ```
 
 #### By BFS Traversal / Khan's Algorithm
 
 ```cpp
-vector<int> TopoSort(vector<vector<int>> &adj) {
-	int V = adj.size();
-	vector<int> indegree(V, 0);
+class Solution {
+  public:
+	vector<int> TopoSort(vector<vector<int>> &adj) {
+		int V = adj.size();
+		vector<int> indegree(V, 0);
 
-	for (int i = 0; i < V; i++) {
-		for (int it : adj[i]) {
-			indegree[it]++;
-		}
-	}
-
-	queue<int> q;
-	for (int i = 0; i < V; i++) {
-		if (indegree[i] == 0) {
-			q.push(i);
-		}
-	}
-
-	vector<int> ans;
-
-	while (!q.empty()) {
-		int node = q.front();
-		q.pop();
-
-		ans.push_back(node);
-
-		for (int it : adj[node]) {
-			indegree[it]--;
-			if (indegree[it] == 0) {
-				q.push(it);
+		for (int i = 0; i < V; i++) {
+			for (int it : adj[i]) {
+				indegree[it]++;
 			}
 		}
-	}
 
-	return ans;
-}
+		queue<int> q;
+		for (int i = 0; i < V; i++) {
+			if (indegree[i] == 0) {
+				q.push(i);
+			}
+		}
+
+		vector<int> ans;
+
+		while (!q.empty()) {
+			int node = q.front();
+			q.pop();
+
+			ans.push_back(node);
+
+			for (int it : adj[node]) {
+				indegree[it]--;
+				if (indegree[it] == 0) {
+					q.push(it);
+				}
+			}
+		}
+
+		return ans;
+	}
+};
 ```
 
 **Time Complexity:** O(V + E)

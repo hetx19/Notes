@@ -9,15 +9,18 @@ Time Complexity: O(1)
 Space Complexity: O(1)
 
 ```cpp
-bool isPowerOfTwo(int n) {
-	for(int i = 0; i <= 30; i++) {
-		int ans = pow(2,i);
-		if (ans == n) {
-			return true;
+class Solution {
+  public:
+	bool isPowerOfTwo(int n) {
+		for(int i = 0; i <= 30; i++) {
+			int ans = pow(2,i);
+			if (ans == n) {
+				return true;
+			}
 		}
+		return false;
 	}
-	return false;
-}
+};
 ```
 
 Optimal Approach:
@@ -27,10 +30,13 @@ Time Complexity: O(1)
 Space Complexity: O(1)
 
 ```cpp
-bool isPowerOfTwo(int n) {
-	return (n > 0 && ((n & (n - 1)) == 0);
-}
+class Solution {
+  public:
+	bool isPowerOfTwo(int n) {
+		return (n > 0 && ((n & (n - 1)) == 0);
+	}
+};
 ```
 
-Bit Manipulation: [[Bit_manipulation]]
+Bit Manipulation: [[Bit Manipulation]]
 

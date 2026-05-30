@@ -10,14 +10,17 @@ Space Complexity: O(1) // For Printing
 Space Complexity: O(Number of divisors) // For Storing
 
 ```cpp
-void printDivisor(int n) {
-	for (int i = 1; i <= n; i++) {
-		if (n % i == 0) {
-			cout << i << " ";
+class Solution {
+  public:
+	void printDivisor(int n) {
+		for (int i = 1; i <= n; i++) {
+			if (n % i == 0) {
+				cout << i << " ";
+			}
 		}
+		cout << "\n";
 	}
-	cout << "\n";
-}
+};
 ```
 
 Optimal Approach:
@@ -30,17 +33,20 @@ Space Complexity: O(1) // For Printing
 Space Complexity: O(Number of divisors) // For Storing
 
 ```cpp
-void printDivisor(int n) {
-	for (int i = 1; i * i <= n; i++) {
-		if (n % i == 0) {
-			cout << i << " ";
-			if ((n / i) != i) {
-				cout << n / i << " ";
+class Solution {
+  public:
+	void printDivisor(int n) {
+		for (int i = 1; i * i <= n; i++) {
+			if (n % i == 0) {
+				cout << i << " ";
+				if ((n / i) != i) {
+					cout << n / i << " ";
+				}
 			}
 		}
+		cout << "\n";
 	}
-	cout << "\n";
-}
+};
 ```
 
 ##### For storing the divisor the first approach is the optimal

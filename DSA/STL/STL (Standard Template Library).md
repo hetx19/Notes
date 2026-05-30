@@ -44,7 +44,7 @@ Store elements in a linear sequence.
 Built on top of sequence containers with restricted functionality.
 
 - Stack - [[Stack]]
-- Queue - [[Queue]]
+- Queue - [[DSA/STL/Queue]]
 - Priority Queue - [[Priority Queue]]
 
 ---

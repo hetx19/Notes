@@ -10,23 +10,26 @@ Time Complexity: O(log n) // Base 10
 Space Complexity: O(1)
 
 ```cpp
-int countDigits(int n) {
-	if (n == 0) {
-		return 1;
+class Solution {
+  public:
+	int countDigits(int n) {
+		if (n == 0) {
+			return 1;
+		}
+	
+		n = abs(n);
+	
+		int temp = n;
+		int digits = 0;
+	
+		while (temp != 0) {
+			digits++;
+			temp = temp / 10;
+		}
+	
+		return digits;
 	}
-	
-	n = abs(n);
-	
-	int temp = n;
-	int digits = 0;
-	
-	while (temp != 0) {
-		digits++;
-		temp = temp / 10;
-	}
-	
-	return digits;
-}
+};
 ```
 
 Optimal Approach:
@@ -38,16 +41,19 @@ Time Complexity: O(1)
 Space Complexity: O(1)
 
 ```cpp
-int countDigits(int n) {
-	if (n == 0) {
-		return 1;
+class Solution {
+  public:
+	int countDigits(int n) {
+		if (n == 0) {
+			return 1;
+		}
+	
+		n = abs(n);
+	
+		int digits = log10(n) + 1;
+	
+		return digits;
 	}
-	
-	n = abs(n);
-	
-	int digits = log10(n) + 1;
-	
-	return digits;
-}
+};
 ```
 

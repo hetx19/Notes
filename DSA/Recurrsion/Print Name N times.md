@@ -6,14 +6,16 @@ Space complexity: O(n) → Recursive Stack Space
 i → starts from 0
 
 ```cpp
-void printName(string name, int i, int n) {
-	if (i == n) {
-		return;
-	}
+class Solution {
+	void printName(string name, int i, int n) {
+		if (i == n) {
+			return;
+		}
 
-	cout << name << "\n";
-	printName(name, i + 1, n);
-}
+		cout << name << "\n";
+		printName(name, i + 1, n);
+	}
+};
 ```
 
 Call it like

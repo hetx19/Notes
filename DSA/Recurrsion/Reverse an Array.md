@@ -6,14 +6,17 @@ Space Complexity: O(n) → recursive stack
 ### Parameterized / With Indices
 
 ```cpp
-void reverseArray(vector<int> &arr, int i, int j) {
-	if (i > j) {
-		return;
-	}
+class Solution {
+  public:
+	void reverseArray(vector<int> &arr, int i, int j) {
+		if (i > j) {
+			return;
+		}
 
-	swap(arr[i], arr[j]);
-	reverseArray(arr, i + 1, j - 1);
-}
+		swap(arr[i], arr[j]);
+		reverseArray(arr, i + 1, j - 1);
+	}
+};
 ```
 
 **Call:**
@@ -27,15 +30,18 @@ reverseArray(arr, 0, n - 1);
 ### Functional / Backtracking Style
 
 ```cpp
-void reverseArray(vector<int> &arr, int i = 0) {
-    int n = arr.size();
-    if (i >= n / 2) {
-	    return;
-    }
+class Solution {
+  public:
+	void reverseArray(vector<int> &arr, int i = 0) {
+	    int n = arr.size();
+	    if (i >= n / 2) {
+		    return;
+	    }
 
-    swap(arr[i], arr[n - i - 1]);
-    reverseArray(arr, i + 1);
-}
+	    swap(arr[i], arr[n - i - 1]);
+	    reverseArray(arr, i + 1);
+	}
+};
 ```
 
 Call:
@@ -50,13 +56,16 @@ Time Complexity: O(n)
 Space Complexity: O(n) → recursive stack
 
 ```cpp
-void reverseArray(vector<int> &arr) {
-	int i = 0, j = arr.size() - 1;
-	while (i < j) {
-		swap(arr[i], arr[j]);
-		i++;
-		j--;
+class Solution {
+  public:
+	void reverseArray(vector<int> &arr) {
+		int i = 0, j = arr.size() - 1;
+		while (i < j) {
+			swap(arr[i], arr[j]);
+			i++;
+			j--;
+		}
 	}
-}
+};
 ```
 

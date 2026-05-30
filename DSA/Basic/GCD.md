@@ -10,17 +10,20 @@ Time Complexity: O(min(a, b))
 Space Complexity: O(1)
 
 ```cpp
-int gcd(int a, int b) {
-	int gcd = 1;
+class Solution {
+  public:
+	int gcd(int a, int b) {
+		int ans = 1;
 	
-	for (int i = 1; i <= min(a, b); i++) {
-		if (((a % i) == 0) && ((b % i) == 0)) {
-			gcd = i;
+		for (int i = 1; i <= min(a, b); i++) {
+			if (((a % i) == 0) && ((b % i) == 0)) {
+				ans = i;
+			}
 		}
-	}
 	
-	return gcd;
-}
+		return ans;
+	}
+};
 ```
 
 Optimal Approach:
@@ -36,18 +39,19 @@ Time Complexity: O(log (min(a, b)))
 Space Complexity: O(1)
 
 ```cpp
-int gcd(int a, int b) {
-	int gcd;
-	
-	while (a > 0 && b > 0) {
-		if (a > b) {
-			a = a % b;
-		} else {
-			b = b % a;
+class Solution {
+  public:
+	int gcd(int a, int b) {
+		while (a > 0 && b > 0) {
+			if (a > b) {
+				a = a % b;
+			} else {
+				b = b % a;
+			}
 		}
-	}
 	
-	return (a == 0) ? b : a;
-}
+		return (a == 0) ? b : a;
+	}
+};
 ```
 

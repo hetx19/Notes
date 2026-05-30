@@ -10,19 +10,22 @@ O(1) → if the sorting algorithm is **in-place**
 O(n) → if a **copy of the array** is created before sorting
 
 ```cpp
-int second_largest(vector<int> &arr) {
-	vector<int> temp = arr;
-	int n = temp.size();
-	sort(temp.begin(), temp.end());
+class Solution {
+  public:
+	int second_largest(vector<int> &arr) {
+		vector<int> temp = arr;
+		int n = temp.size();
+		sort(temp.begin(), temp.end());
 
-	for (int i = n - 2; i >= 0; i--) {
-		if (temp[i] != temp[n - 1]) {
-			return temp[i];
+		for (int i = n - 2; i >= 0; i--) {
+			if (temp[i] != temp[n - 1]) {
+				return temp[i];
+			}
 		}
-	}
 
-	return -1;
-}
+		return -1;
+	}
+};
 ```
 
 ---
@@ -35,24 +38,27 @@ Idea: Traverse the array to find the maximum element. Then run another loop to f
 **Space Complexity** O(1)
 
 ```cpp
-int second_largest(vector<int> &arr) {
-    int n = arr.size();
-    int largest = arr[0];
+class Solution {
+  public:
+	int second_largest(vector<int> &arr) {
+	    int n = arr.size();
+	    int largest = arr[0];
 
-    for (int i = 1; i < n; i++) {
-        largest = max(largest, arr[i]);
-    }
+	    for (int i = 1; i < n; i++) {
+	        largest = max(largest, arr[i]);
+	    }
 
-    int s_largest = -1;
+	    int s_largest = -1;
 
-    for (int i = 0; i < n; i++) {
-        if (arr[i] != largest) {
-            s_largest = max(s_largest, arr[i]);
-        }
-    }
+	    for (int i = 0; i < n; i++) {
+	        if (arr[i] != largest) {
+	            s_largest = max(s_largest, arr[i]);
+	        }
+	    }
 
-    return s_largest;
-}
+	    return s_largest;
+	}
+};
 ```
 
 ---
@@ -65,23 +71,24 @@ Idea: Traverse the array once while maintaining two variables: largest and secon
 **Space Complexity** O(1)
 
 ```cpp
-int second_largest(vector<int> &arr) {
-    int n = arr.size();
-    int largest = arr[0];
-    int s_largest = -1;
+class Solution {	
+	int second_largest(vector<int> &arr) {
+	    int n = arr.size();
+	    int largest = arr[0];
+	    int s_largest = -1;
 
-    for (int i = 0; i < n; i++) {
-	    if (arr[i] > largest) {
-		    s_largest = largest;
-		    largest = arr[i];
-	    } else if (arr[i] > s_largest && arr[i] < largest) {
-		    s_largest = arr[i];
+	    for (int i = 0; i < n; i++) {
+		    if (arr[i] > largest) {
+			    s_largest = largest;
+			    largest = arr[i];
+		    } else if (arr[i] > s_largest && arr[i] < largest) {
+			    s_largest = arr[i];
+		    }
 	    }
-    }
 
-    return s_largest;
-}
-
+	    return s_largest;
+	}
+};
 ```
 
 ##### Important point: It is a good practice not to alter the input unless the question told you to do it

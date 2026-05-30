@@ -10,13 +10,16 @@ Space complexity: O(n) → Recursion Stack Space
 ###### Parameterize Way
 
 ```cpp
-long long factorialN(int i, long long factorial) {
-    if (i <= 1) {
-        return factorial;
-    }
+class Solution {
+  public:
+	long long factorialN(int i, long long factorial) {
+	    if (i <= 1) {
+	        return factorial;
+	    }
 
-    return factorialN(i - 1, 1LL * factorial * i);
-}
+	    return factorialN(i - 1, 1LL * factorial * i);
+	}
+};
 ```
 
 Call this like
@@ -28,13 +31,16 @@ long long ans = factorialN(n, 1);
 ###### Formal Way
 
 ```cpp
-long long factorialN(int n) {
-    if (n == 0 || n == 1) {
-        return 1;
-    }
+class Solution {
+  public:
+	long long factorialN(int n) {
+	    if (n == 0 || n == 1) {
+	        return 1;
+	    }
 
-    return 1LL * n + factorialN(n - 1);
-}
+	    return 1LL * n + factorialN(n - 1);
+	}
+};
 ```
 
 Call this like
@@ -53,14 +59,17 @@ Time complexity: O(n)
 Space complexity: O(1)
 
 ```cpp
-long long factorialN(int n) {
-	long long factorial = 1;
+class Solution {
+  public:
+	long long factorialN(int n) {
+		long long factorial = 1;
 
-	for (int i = 1; i <= n; i++) {
-		factorial *= i;
+		for (int i = 1; i <= n; i++) {
+			factorial *= i;
+		}
+
+		return factorial;
 	}
-
-	return factorial;
-}
+};
 ```
 

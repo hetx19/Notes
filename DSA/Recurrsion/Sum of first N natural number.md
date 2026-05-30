@@ -10,13 +10,16 @@ Space complexity: O(n) → Recursion Stack Space
 ###### Parameterize Way
 
 ```cpp
-int sumOfN(int i, int sum) {
-    if (i == 0) {
-        return sum;
-    }
+class Solution {
+  public:
+	int sumOfN(int i, int sum) {
+	    if (i == 0) {
+	        return sum;
+	    }
 
-    return sumOfN(i - 1, sum + i);
-}
+	    return sumOfN(i - 1, sum + i);
+	}
+};
 ```
 
 Call this like
@@ -28,13 +31,16 @@ int ans = sumOfN(n, 0);
 ###### Formal Way
 
 ```cpp
-int sumOfN(int n) {
-    if (n == 0) {
-        return 0;
-    }
+class Solution {
+  public:
+	int sumOfN(int n) {
+	    if (n == 0) {
+	        return 0;
+	    }
 
-    return n + sumOfN(n - 1);
-}
+	    return n + sumOfN(n - 1);
+	}
+};
 ```
 
 Call this like
@@ -53,15 +59,18 @@ Time complexity: O(n)
 Space complexity: O(1)
 
 ```cpp
-int sumOfN(int n) {
-	int sum = 0;
+class Solution {
+  public:
+	int sumOfN(int n) {
+		int sum = 0;
 
-	for (int i = 1; i <= n; i++) {
-		sum += i;
+		for (int i = 1; i <= n; i++) {
+			sum += i;
+		}
+
+		return sum;
 	}
-
-	return sum;
-}
+};
 ```
 
 ---
@@ -74,8 +83,11 @@ Time complexity: O(1)
 Space complexity: O(1)
 
 ```cpp
-int sumOfN(int n) {
-	return (n * (n + 1) / 2);
-}
+class Solution {
+  public:
+	int sumOfN(int n) {
+		return (n * (n + 1) / 2);
+	}
+};
 ```
 

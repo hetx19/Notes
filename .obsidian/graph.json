@@ -78,10 +78,10 @@
       }
     },
     {
-      "query": "path:DSA/Queue path:DSA/Stack  ",
+      "query": "path:DSA/Queue  ",
       "color": {
         "a": 1,
-        "rgb": 5431378
+        "rgb": 5232722
       }
     },
     {
@@ -120,24 +120,24 @@
       }
     },
     {
+      "query": "path:DSA/Stack  ",
+      "color": {
+        "a": 1,
+        "rgb": 5232722
+      }
+    },
+    {
       "query": "path:DSA  ",
       "color": {
         "a": 1,
-        "rgb": 65535
+        "rgb": 65518
       }
     },
     {
-      "query": "",
+      "query": "path:\"Spring Boot\"  ",
       "color": {
         "a": 1,
-        "rgb": 5395026
-      }
-    },
-    {
-      "query": "",
-      "color": {
-        "a": 1,
-        "rgb": 5395026
+        "rgb": 7268972
       }
     },
     {
@@ -158,6 +158,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7568277327002475,
+  "scale": 0.6898816388062976,
   "close": true
 }

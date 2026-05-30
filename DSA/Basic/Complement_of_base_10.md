@@ -12,19 +12,22 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 
 ```cpp
-int bitwiseComplement(int n) {
-	if (n == 0) {
-		return 1;
+class Solution {
+  private:
+	int bitwiseComplement(int n) {
+		if (n == 0) {
+			return 1;
+		}
+	
+		int temp = n;
+		int mask = 0;
+	
+		while (temp != 0) {
+			mask = (mask << 1) | 1;
+			temp = temp >> 1;
+		}
+	
+		return ((~n)&mask);
 	}
-	
-	int temp = n;
-	int mask = 0;
-	
-	while (temp != 0) {
-		mask = (mask << 1) | 1;
-		temp = temp >> 1;
-	}
-	
-	return ((~n)&mask);
-}
+};
 ```

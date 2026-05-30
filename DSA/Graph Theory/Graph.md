@@ -445,15 +445,25 @@ Graph traversal means **visiting all vertices of a graph systematically**.
 BFS - [[BFS]]
 DFS - [[DFS]]
 
+Shortest Path Algorithms:
+Dijkstra's Algorithm - [[Dijkstra's Algo]]
+Bellman Ford Algorithm - [[Bellman Ford Algo]]
+Floyd Warshall Algorithm - [[Floyd Warshall Algo]]
+
 ---
 
 ### Problems on Graphs
 
-Number of Provinces - [[]]
-Number of Islands - [[]]
+**_Problems on BFS/DFS_**
+Number of Provinces - [[Number of Provinces]]
+Number of Islands - [[Number of Islands]]
 Flood Fill - [[Flood Fill]]
 Rotten Orange - [[Rotten Orange]]
 Distance of nearest cell - [[Distance of nearest cell]]
+Surrounded Regions - [[Surrounded Regions]]
+Number of Enclaves - [[Number of Enclaves]]
+Number of distinct Islands - [[Number of distinct Islands]]
+Bipartite Graph - [[Bipartite Graph]]
 Cycle Detection in Undirected Graph - [[Cycle Detection in undirected graph]]
 Cycle Detection in Directed Graph - [[Cycle detection in directed graph]]
 
@@ -462,5 +472,22 @@ Topological Sort -[[Topological Sort]]
 Cycle Detection in Directed Graph - [[Cycle detection in directed graph]]
 Course Schedule - [[Course Schedule]]
 Course Schedule II - [[Course Schedule II]]
-Find Eventual Safe States = [[Find Eventual Safe States]]
+Find Eventual Safe States - [[Find Eventual Safe States]]
+Alien Dictionary - [[Alien Dictionary]]
 
+**_Problems on Shortest Path_**
+Shortest Path in Directed Acyclic Graph - [[Shortest Path in Directed Acyclic Graph]]
+Shortest Path in Undirected Graph with Unit Weight - [[Shortest Path in Undirected Graph with Unit Weight]]
+Word Ladder - [[Word Ladder]]
+Word Ladder II - [[Word Ladder II]]
+Dijkstra's Algorithm - [[Dijkstra's Algorithm]]
+Cheapest Flights Within K Stops - [[Cheapest Flights Within K Stops]]
+Minimum Multiplications to reach End - [[Minimum Multiplications to reach End]]
+Number of Ways to Arrive at Destination - [[Number of Ways to Arrive at Destination]]
+Bellman Ford Algorithm - [[Bellman Ford Algorithm]]
+Floyd Warshall Algorithm - [[Floyd Warshall Algorithm]]
+Find the City With the Smallest Number of Neighbors at a Threshold Distance - [[Find the City With the Smallest Number of Neighbors at a Threshold Distance]]
+
+**_Problems on Minimum Spanning Tree_**
+Minimum Spanning Tree - [[Minimum Spanning Tree (MST)]]
+Minimum Spanning Tree - [[Minimum Spanning Tree (MST)]]

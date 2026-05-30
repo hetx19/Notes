@@ -7,17 +7,20 @@ Time Complexity: O(2<sup>n</sup>)
 Space Complexity: O(n) → recursion stack
 
 ```cpp
-int fibonacci(int n) {
-    if (n == 0) {
-	    return 0;
-	}
+class Solution {
+  public:
+	int fibonacci(int n) {
+	    if (n == 0) {
+		    return 0;
+		}
 
-    if (n == 1) {
-	    return 1;
-	}
+	    if (n == 1) {
+		    return 1;
+		}
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
+	    return fibonacci(n - 1) + fibonacci(n - 2);
+	}
+};
 ```
 
 Call:
@@ -34,13 +37,16 @@ Time Complexity: O(n)
 Space Complexity: O(n) → recursion stack
 
 ```cpp
-int fibonacci(int n, int a = 0, int b = 1) {
-    if (n == 0) {
-	    return a;
-	}
+class Solution {
+  public:
+	int fibonacci(int n, int a = 0, int b = 1) {
+	    if (n == 0) {
+		    return a;
+		}
 
-    return fibonacci(n - 1, b, a + b);
-}
+	    return fibonacci(n - 1, b, a + b);
+	}
+};
 ```
 
 Call:
@@ -57,19 +63,22 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 
 ```cpp
-int fibonacci(int n) {
-    if (n == 0) {
-	    return 0;
+class Solution {
+  public:
+	int fibonacci(int n) {
+	    if (n == 0) {
+		    return 0;
+		}
+
+	    int a = 0, b = 1;
+
+	    for (int i = 2; i <= n; i++) {
+	        int c = a + b;
+	        a = b;
+	        b = c;
+	    }
+
+	    return b;
 	}
-
-    int a = 0, b = 1;
-
-    for (int i = 2; i <= n; i++) {
-        int c = a + b;
-        a = b;
-        b = c;
-    }
-
-    return b;
-}
+};
 ```
