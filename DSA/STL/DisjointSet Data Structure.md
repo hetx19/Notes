@@ -78,7 +78,7 @@ class DisjointSet {
 	    parent.resize(V);
 	    rank.resize(V, 0);
 	    
-	    for (int i = 0; i < V; i++) {\
+	    for (int i = 0; i < V; i++) {
 		    parent[i] = i;
 	    }
     }
@@ -187,15 +187,15 @@ void unionBySize(int u, int v) {
 ### Fully Optimized DSU
 
 ```cpp
-class DSU {
+class DisjointSet {
     vector<int> parent, size;
 
 public:
-    DSU(int V) {
+    DisjointSet(int V) {
         parent.resize(V + 1);
         size.resize(V + 1, 1);
 
-        for(int i = 0; i <= n; i++) {
+        for(int i = 0; i <= V; i++) {
             parent[i] = i;
         }
     }

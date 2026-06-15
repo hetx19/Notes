@@ -15,8 +15,8 @@ Note: Modify the distances for every pair **in place**.
 ---
 
 ### Algorithm - [[Dynamic Programming]]
-**Time Complexity**: O()
-**Space Complexity**: O()
+**Time Complexity**: O(n<sup>3</sup>)
+**Space Complexity**: O(n<sup>2</sup>)
 
 ```cpp
 class Solution {
@@ -42,3 +42,8 @@ class Solution {
     }
 };
 ```
+
+> [!tip]
+> We are changing the given distance array. Hence Space Complexity will be O(n<sup>2</sup>)
+
+---

@@ -1,0 +1,38 @@
+### Binary Search on 1 D Array
+
+1. Search X in sorted array - [[Search X in sorted array]]
+2. Lower Bound - [[Lower Bound]]
+3. Upper Bound - [[Upper Bound]]
+4. Search insert Position - [[Search insert Position]]
+5. Floor in sorted Array - [[Floor in sorted Array]]
+6. Ceil in sorted Array - [[Ceil in sorted Array]]
+7. First and Last Occurence in sorted Array - [[First and Last Occurence in sorted Array]]
+8. Search in rotated sorted array-I - [[Search in rotated sorted array-I]]
+9. Search in rotated sorted array-II - [[Search in rotated sorted array-II]]
+10. Find minimum in Rotated Sorted Array - [[Find minimum in Rotated Sorted Array]]
+11. Find out how many times the array is rotated - [[Find out how many times the array is rotated]]
+12. Single element in a Sorted Array - [[Single element in a Sorted Array]]
+13. Find Peak Element - [[Find Peak Element]]
+### Binary Search on Answers
+
+1. Find square root of a number - [[Find square root of a number]]
+2. Find Nth root of a number - [[Find Nth root of a number]]
+3. Koko eating bananas - [[Koko eating bananas]]
+4. Minimum days to make M bouquets - [[Minimum days to make M bouquets]]
+5. Find the smallest divisor - [[Find the smallest divisor]]
+6. Capacity to Ship Packages Within D Days - [[Capacity to Ship Packages Within D Days]]
+7. Kth Missing Positive Number - [[Kth Missing Positive Number]]
+8. Aggressive Cows - [[Aggressive Cows]]
+9. Book Allocation Problem - [[Book Allocation Problem]]
+10. Split array - largest sum - [[Split array - largest sum]]
+11. Painter's Partition - [[Painter's Partition]]
+12. Minimize Max Distance to Gas Station - [[Minimize Max Distance to Gas Station]]
+13. Median of 2 sorted arrays - [[Median of 2 sorted arrays]]
+14. Kth element of 2 sorted arrays - [[Kth element of 2 sorted arrays]]
+### Binary Search on 2 D Array
+
+1. Find row with maximum 1's - [[Find row with maximum 1's]]
+2. Search in a 2D matrix - [[Search in a 2D matrix]]
+3. Search in 2D matrix - II - [[Search in 2D matrix - II]]
+4. Find Peak Element - II - [[Find Peak Element - II]]
+5. Matrix Median - [[Matrix Median]]

@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "499d92ae2628afaa",
+        "id": "d467be85774b3e72",
         "type": "tabs",
         "children": [
           {
-            "id": "960bac0522beb774",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Array/Array.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Array"
-            }
-          },
-          {
-            "id": "1089bb75fc476c23",
+            "id": "f0b8d00cb6ad106d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -32,21 +18,20 @@
             }
           },
           {
-            "id": "a68a91cafddcf22c",
+            "id": "8da3030be619675a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Data_structure.md",
-                "mode": "source",
+                "file": "DSA/Binary Search/Problems on Binary Search.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data_structure"
+              "title": "Problems on Binary Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,56 +225,56 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a68a91cafddcf22c",
+  "active": "7d1e7177d7127d0b",
   "lastOpenFiles": [
-    "DSA/Data_structure.md",
-    "DSA/Stack/Stack.md",
-    "DSA/Graph Theory/Shortest Path/Floyd Warshall Algorithm.md",
-    "DSA/Graph Theory/Graph.md",
-    "DSA/Graph Theory/Minimun Spanning Tree/Minimum Spanning Tree (MST).md",
-    "DSA/STL/Multimap.md",
-    "DSA/Basic/Power_of_2.md",
-    "DSA/String/String.md",
-    "DSA/STL/STL (Standard Template Library).md",
-    "DSA/Queue/Queue.md",
-    "DSA/STL/Queue.md",
-    "DSA/Linked List/Linked List.md",
-    "DSA/Heap/Heap.md",
-    "DSA/Greedy/Greedy.md",
-    "DSA/Dynamic Programming/Dynamic Programming.md",
-    "DSA/Bit Manipulation/Bit Manipulation.md",
-    "DSA/Binary Tree/Binary Tree.md",
-    "DSA/Binary Search Tree/Binary Search Tree.md",
-    "DSA/Hashing/Hashing.md",
-    "DSA/Array/Array.md",
-    "DSA/Array/Maximum subarray sum.md",
-    "DSA/Array/Majority element - I.md",
-    "DSA/Array/Sort array of 0's, 1's and 2's.md",
-    "DSA/Sorting Techniques/Quick Sort.md",
-    "DSA/Sorting Techniques/Sorting.md",
+    "DSA/Binary Search/Problems on Binary Search.md",
+    "DSA/Binary Search/1 D/Ceil in sorted Array.md",
+    "DSA/Binary Search/1 D/Floor in sorted Array.md",
+    "DSA/Binary Search/1 D/Lower Bound.md",
+    "DSA/Binary Search/1 D/Search insert Position.md",
+    "DSA/Binary Search/1 D/Upper Bound.md",
+    "DSA/Binary Search/1 D/Search X in sorted array.md",
     "DSA/Binary Search/Binary Search.md",
+    "DSA/Binary Search/Answer/Aggressive Cows.md",
+    "DSA/Binary Search/Answer/Split array - largest sum.md",
+    "DSA/Binary Search/Answer/Koko eating bananas.md",
+    "DSA/Binary Search/Answer/Find square root of a number.md",
+    "DSA/Binary Search/Answer/Find Nth root of a number.md",
+    "DSA/Binary Search/Answer/Minimum days to make M bouquets.md",
+    "DSA/Binary Search/Answer/Capacity to Ship Packages Within D Days.md",
+    "DSA/Binary Search/Answer/Find the smallest divisor.md",
+    "DSA/Binary Search/Answer/Kth Missing Positive Number.md",
+    "DSA/Binary Search/Answer/Book Allocation Problem.md",
+    "DSA/Binary Search/Answer/Painter's Partition.md",
+    "DSA/Binary Search/Answer/Minimize Max Distance to Gas Station.md",
+    "DSA/Binary Search/Answer/Median of 2 sorted arrays.md",
+    "DSA/Binary Search/Answer/Kth element of 2 sorted arrays.md",
+    "DSA/Binary Search/2 D/Find row with maximum 1's.md",
+    "DSA/Binary Search/2 D/Search in a 2D matrix.md",
+    "DSA/Binary Search/2 D/Search in 2D matrix - II.md",
+    "DSA/Binary Search/2 D/Find Peak Element - II.md",
+    "DSA/Binary Tree/Assets",
+    "DSA/Binary Tree/Hard Problems",
+    "DSA/Binary Tree/Medium Problems",
+    "DSA/Binary Tree/Traversals",
     "Untitled.base",
-    "Cloud Computing/Assets",
-    "Cloud Computing/Interview Preparation",
-    "Cloud Computing/Certifications",
-    "Cloud Computing/Architecture & Case Studies",
-    "Cloud Computing/DevOps and Automations",
-    "Cloud Computing/Security",
-    "Cloud Computing/Databases",
-    "Cloud Computing/Storage Services",
-    "Cloud Computing/Compute Services",
-    "Spring Boot/Untitled.canvas",
+    "Pasted image 20260607213256.png",
+    "DSA/Array/Assets/Pascal's Triangle.png",
+    "DSA/Array/Assets/Spiral Matrix.png",
+    "DSA/Array/Assets/Rotate Image.png",
+    "DSA/Array/Assets",
+    "DSA/Array/Assets/Set matrix to zero.png",
+    "DSA/Dynamic Programming/Dp on Squares",
+    "DSA/Dynamic Programming/Partition Dp",
+    "DSA/Dynamic Programming/Dp on LIS",
+    "DSA/Dynamic Programming/Dp on Stock",
+    "DSA/Dynamic Programming/assets/Fibo Tabulation.png",
+    "DSA/Dynamic Programming/assets/Fibo Memoization.png",
+    "DSA/Dynamic Programming/assets/Fibo recursion tree.png",
+    "DSA/Dynamic Programming/assets/fibo.png",
+    "DSA/Dynamic Programming/assets/Dp.png",
     "DSA/Data_structure.canvas",
-    "DSA/Graph Theory/Images/Minimum spanning tree.png",
-    "DSA/Graph Theory/Images/Find the City With the Smallest Number of Neighbors at a Threshold Distance.png",
-    "DSA/Graph Theory/Images/Floyd Warshall Algorithm.png",
-    "DSA/Graph Theory/Images/Bellman Ford Algorithm.png",
-    "DSA/Graph Theory/Images/Number of Ways to Arrive at Destination.png",
-    "DSA/Graph Theory/Images/Cheapest Flights Within K Stops.png",
-    "DSA/Graph Theory/Images/Number of Enclaves.png",
-    "DSA/Graph Theory/Images/Rotten Oranges.png",
-    "DSA/Graph Theory/Images/Distance of nearest cell.png",
-    "Pasted image 20260331184149.png",
+    "Spring Boot/Untitled.canvas",
     "Untitled.canvas"
   ]
 }

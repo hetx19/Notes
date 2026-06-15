@@ -141,23 +141,23 @@
       }
     },
     {
-      "query": "",
+      "query": "path:OOPs  ",
       "color": {
         "a": 1,
-        "rgb": 5395026
+        "rgb": 15903711
       }
     }
   ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
+  "nodeSizeMultiplier": 1.00365017361111,
   "lineSizeMultiplier": 1,
   "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6898816388062976,
+  "scale": 0.7158602333232279,
   "close": true
 }

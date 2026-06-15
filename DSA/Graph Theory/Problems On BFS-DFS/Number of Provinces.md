@@ -122,4 +122,86 @@ class Solution {
 **Space Complexity:** O(V + 2E) + O(V) + O(V) → O(V + 2E)
 
 ---
-Important Note: Matrix is given so we can improve space complexity by implementing BFS/DFS using the adjacency Matrix.
+
+>[!tip]
+>Matrix is given so we can improve space complexity by implementing BFS/DFS using the adjacency Matrix.
+
+---
+
+### By using DisjointSet - [[DisjointSet Data Structure]]
+
+**Time Complexity**: O(V<sup>2</sup>)
+**Space Complexity**: O(V<sup>2</sup>)
+
+```cpp
+class DisjointSet {
+  private:
+	vector<int> parent, size;
+	
+  public:
+	DisjointSet(int V) {
+		parent.resize(V);
+		size.resize(V, 1);
+
+		for (int i = 0; i < V; i++) {
+			parent[i] = i;
+		}
+	}
+	
+	int getParent(int node) {
+		return parent[node];
+	}
+	
+	int findParent(int node) {
+		if (node == parent[node]) {
+			return node;
+		}
+		
+		return parent[node] = findParent(parent[node]);
+	}
+
+  
+
+	void unionBySize(int u, int v) {
+		int pu = findParent(u), pv = findParent(v);
+
+		if (pu == pv) {
+			return;
+		}
+		
+		if (size[pu] < size[pv]) {
+			parent[pu] = pv;
+			size[pv] += pu;
+		} else {
+			parent[pv] = pu;
+			size[pu] += pv;
+		}
+	}
+};
+
+class Solution {
+  public:
+	int findCircleNum(vector<vector<int>>& isConnected) {
+		int V = isConnected.size();
+		DisjointSet ds(V);
+
+		for (int i = 0; i < V; i++) {
+			for (int j = 0; j < V; j++) {
+				if (isConnected[i][j] == 1) {
+					ds.unionBySize(i, j);
+				}
+			}
+		}
+		
+		int ans = 0;
+		
+		for (int i = 0; i < V; i++) {
+			if (i == ds.getParent(i)) {
+				ans++;
+			}
+		}
+		
+		return ans;
+	}
+};
+```

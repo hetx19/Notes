@@ -14,6 +14,7 @@ The four ways to get there in 7 minutes are:
 - 0 ➝ 4 ➝ 6
 - 0 ➝ 1 ➝ 2 ➝ 5 ➝ 6
 - 0 ➝ 1 ➝ 3 ➝ 5 ➝ 6
+
 [Visit Leetcode](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)
 
 ---

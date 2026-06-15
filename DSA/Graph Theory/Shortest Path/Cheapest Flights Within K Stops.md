@@ -11,6 +11,9 @@ The graph is shown above.
 The optimal path with at most 1 stop from city 0 to 3 is marked in red and has cost 100 + 600 = 700.
 Note that the path through cities `[0,1,2,3]` is cheaper but is invalid because it uses 2 stops.
 
+[Visit Leetcode](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+[Visit GFG](https://www.geeksforgeeks.org/problems/cheapest-flights-within-k-stops/1)
+
 ---
 
 ### By using BFS + Dijkstra's Algorithm

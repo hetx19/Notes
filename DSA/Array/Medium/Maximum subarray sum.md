@@ -93,3 +93,48 @@ class Solution {
     }
 };
 ```
+
+>[!tip]
+if the question asked to print /  return the subarray then
+
+**Time Complexity**: O(n) + O(k)
+**Space Complexity**: O(k)
+
+```cpp
+class Solution {
+  public:
+    vector<int> maxSubArray(vector<int> &arr) {
+        int maxSum = INT_MIN;
+        int sum = 0, n = nums.size();
+        int ansStart = -1, ansEnd = -1;
+        int start = -1, end = -1;
+        
+        for (int i = 0; i < n; i++) {
+	        if (sum == 0) {
+		        start = i;
+		    }
+		    
+		    sum += nums[i];
+		    
+		    if (sum > maxSum) {
+			    maxSum = sum;
+			    ansStart = start;
+			    ansEnd = i;
+		    }
+		    
+		    if (sum < 0) {
+			    sum = 0;
+		    }
+        }
+        
+        vector<int> result;  
+		for (int i = ansStart; i <= ansEnd; i++) {  
+			result.push_back(arr[i]);  
+		}
+  
+		return result; 
+    }
+};
+```
+
+---
