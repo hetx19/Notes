@@ -31,7 +31,6 @@ class Solution {
 			arr[i] = temp[i - low];
 		}
 	}
-};
 
   public:
 	void mergeSort(vector<int>& arr, int low, int high) {

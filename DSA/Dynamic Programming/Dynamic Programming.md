@@ -517,9 +517,16 @@ If yes, the problem is likely a **Dynamic Programming** problem.
 ### Problems on Dynamic Programming
 
 **_1 D DP_**
-Climbing Stairs - [[Climbing Stairs]]
+**Climbing Stairs** - [[Climbing Stairs]]
+**Frog Jump** - [[Frog Jump]]
+**Frog Jump with K distance** - [[Frog Jump with K distance]]
+**House Robber** - [[House Robber]]
+**House Robber 2** - [[House Robber 2]]
 
-**__**
-**__**
-**__**
-**__**
+**_2 D DP_**
+**Ninja's training** - [[Ninja's training]]
+**Unique Paths** - [[Unique Paths]]
+**Unique Paths 2** - [[Unique Paths 2]]
+**Minimum Path Sum** - [[Minimum Path Sum]]
+**Triangle** - [[Triangle]]
+**Ninja and his Friends - [[Ninja and his Friends]]

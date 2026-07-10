@@ -7,6 +7,8 @@
 ![[BFS Example.png|295]]
 
 ##### Output: `[0, 2, 3, 1, 4]`
+---
+### By using Queue - [[DSA/STL/Queue|Queue]]
 
 ```cpp
 class Solution {

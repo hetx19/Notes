@@ -8,6 +8,9 @@
 
 ##### Output: `[0, 2, 4, 3, 1]`
 
+---
+### By using Stack - [[DSA/STL/Stack|Stack]]
+
 ```cpp
 class Solution {
   public:

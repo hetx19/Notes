@@ -8,5 +8,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "trashOption": "none"
+  "trashOption": "none",
+  "alwaysUpdateLinks": false,
+  "useMarkdownLinks": false
 }

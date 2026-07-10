@@ -19,7 +19,7 @@ Return `true` _if and only if it is **bipartite**_.
 [Visit GFG](https://www.geeksforgeeks.org/problems/bipartite-graph/1)
 
 ---
-### By DFS Traversal
+### By DFS Traversal - [[DFS]]
 
 **Time Complexity:** O(V + 2E)
 **Space Complexity:** O(V) + O(V) → O(V)
@@ -63,7 +63,7 @@ class Solution {
 ```
 
 ---
-### By BFS Traversal
+### By BFS Traversal - [[BFS]]
 
 **Time Complexity:** O(V + 2E)
 **Space Complexity:** O(V) + O(V) → O(V)
