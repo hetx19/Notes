@@ -126,7 +126,7 @@ vector<int> dp(n + 1, -1);
 Check whether the state has already been computed:
 
 ```cpp
-if(dp[n] != -1) return dp[n];
+if (dp[n] != -1) return dp[n];
 ```
 
 ---
@@ -242,7 +242,7 @@ dp[1] = 1;
 Fill remaining states:
 
 ```cpp
-for(int i = 2; i <= n; i++) {
+for (int i = 2; i <= n; i++) {
     dp[i] = dp[i - 1] + dp[i - 2];
 }
 ```
@@ -255,7 +255,7 @@ for(int i = 2; i <= n; i++) {
 class Solution {
 public:
     int fib(int n) {
-        if(n <= 1) {
+        if (n <= 1) {
             return n;
         }
 
@@ -264,7 +264,7 @@ public:
         dp[0] = 0;
         dp[1] = 1;
 
-        for(int i = 2; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             dp[i] = dp[i - 1] + dp[i - 2];
         }
 
@@ -336,8 +336,8 @@ Therefore storing the entire array is unnecessary.
 Store only:
 
 ```cpp
-prev2 = dp[i-2]
-prev  = dp[i-1]
+prev2 = dp[i - 2]
+prev  = dp[i - 1]
 ```
 
 Compute:
@@ -361,18 +361,18 @@ prev = curr;
 class Solution {
 public:
     int fib(int n) {
-        if(n == 0) {
+        if (n == 0) {
             return 0;
         }
 
-        if(n == 1) {
+        if (n == 1) {
             return 1;
         }
 
         int prev2 = 0;
         int prev = 1;
 
-        for(int i = 2; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             int curr = prev + prev2;
             prev2 = prev;
             prev = curr;
@@ -524,9 +524,15 @@ If yes, the problem is likely a **Dynamic Programming** problem.
 **House Robber 2** - [[House Robber 2]]
 
 **_2 D DP_**
-**Ninja's training** - [[Ninja's training]]
+**Geek's training** - [[Geek's Training]]
 **Unique Paths** - [[Unique Paths]]
 **Unique Paths 2** - [[Unique Paths 2]]
 **Minimum Path Sum** - [[Minimum Path Sum]]
 **Triangle** - [[Triangle]]
-**Ninja and his Friends - [[Ninja and his Friends]]
+**Maximum path sum in matrix** - [[Maximum path sum in matrix]]
+**Minimum Sum in a Falling Path** - [[Minimum Sum in a Falling Path]]
+
+**_3 D DP_**
+**Cherry Pickup II** - [[Cherry Pickup II]]
+
+**_DP on Sub sequence_**

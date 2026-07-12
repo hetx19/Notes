@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1e59591f5308edd4",
+        "id": "2b90655e9d6c06ae",
         "type": "tabs",
         "children": [
           {
-            "id": "457274c8a2626f3a",
+            "id": "d97c08344d92b628",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Dynamic Programming/Dp on grid/Cherry Pickup II.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Cherry Pickup II"
+            }
+          },
+          {
+            "id": "9d82a4b0757f74c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Dynamic Programming/Dynamic Programming.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dynamic Programming"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,8 +230,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7d1e7177d7127d0b",
+  "active": "9d82a4b0757f74c2",
   "lastOpenFiles": [
+    "DSA/Dynamic Programming/Dp on grid/Cherry Pickup II.md",
+    "DSA/Dynamic Programming/assets/Cherry Pickup II.png",
+    "DSA/Dynamic Programming/Dynamic Programming.md",
+    "DSA/Dynamic Programming/Dp on grid/Cherry Pickup.md",
+    "DSA/Dynamic Programming/Dp on grid/Geek's Training.md",
+    "DSA/Dynamic Programming/Dp on grid/Minimum Sum in a Falling Path.md",
+    "DSA/Dynamic Programming/Dp on grid/Triangle.md",
+    "DSA/Dynamic Programming/Dp on grid/Ninja and his Friends.md",
+    "DSA/Dynamic Programming/Dp on grid/Unique Paths.md",
+    "DSA/Dynamic Programming/Dp on grid/Maximum path sum in matrix.md",
+    "DSA/Binary Tree/Assets/Maximum path sum.png",
+    "DSA/Dynamic Programming/Dp on grid/Minimum Path Sum.md",
+    "DSA/Dynamic Programming/1 D Dp/Climbing Stairs.md",
+    "DSA/Dynamic Programming/assets/Minimum Path Sum.png",
+    "DSA/Dynamic Programming/Dp on grid/Unique Paths 2.md",
+    "DSA/Dynamic Programming/assets/Unique Paths 2.png",
+    "Pasted image 20260711132639.png",
+    "DSA/Dynamic Programming/1 D Dp/House Robber 2.md",
+    "DSA/Dynamic Programming/assets/Unique Paths.png",
+    "DSA/Dynamic Programming/1 D Dp/House Robber.md",
+    "DSA/Dynamic Programming/1 D Dp/Frog Jump.md",
+    "DSA/Dynamic Programming/1 D Dp/Frog Jump with K distance.md",
+    "DSA/Hashing/Hashing.md",
     "DSA/Binary Search Tree/Problems on Binary Search Tree.md",
     "DSA/Binary Search Tree/Largest Binary Search Tree inside Binary Tree.md",
     "DSA/Binary Search Tree/Validate Binary Search Tree.md",
@@ -224,30 +266,7 @@
     "DSA/Binary Search Tree/Assets/Two Sum in Binary Search Tree.png",
     "DSA/Binary Search Tree/Inorder Predecessor in Binary Search Tree.md",
     "DSA/Binary Search Tree/Inorder Successor in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Binary Search Tree Iterator.md",
     "DSA/Binary Search Tree/Assets/Binary Search Tree Iterator.png",
-    "DSA/Binary Search Tree/Binary Search Tree.md",
-    "DSA/Binary Search Tree/Construct a Binary Search Tree from preOrder Traversal.md",
-    "DSA/Binary Tree/Hard Problems/Construct the Binary Tree from Preorder and Inorder Traversal.md",
-    "DSA/Hashing/Hashing.md",
-    "DSA/Binary Search Tree/Insert in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Assets/Construct a Binary Search Tree from preOrder Traversal.png",
-    "DSA/Binary Search Tree/Lowest Common Ancestor in Binary Search Tree.md",
-    "DSA/Binary Tree/Hard Problems/Lowest Common Ancestor in Binary Tree.md",
-    "DSA/Binary Search Tree/Assets/Lowest Common Ancestor in Binary Search Tre.png",
-    "DSA/Binary Search Tree/Assets/Validate Binary Search Tree.png",
-    "DSA/Binary Search Tree/kth largest in Binary Search Tree.md",
-    "DSA/Binary Search Tree/kth smallest in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Assets/kth smallest in Binary Search Tree.png",
-    "DSA/Binary Search Tree/Delete a node in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Assets/Insert in Binary Search Tree.png",
-    "DSA/Binary Search Tree/Assets/Delete a node in Binary Search Tree.png",
-    "DSA/Binary Search Tree/Ceil in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Floor in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Find Maximum in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Search in Binary Search Tree.md",
-    "DSA/Binary Search Tree/Find Minimum in Binary Search Tree.md",
-    "DSA/Binary Search/Problems on Binary Search.md",
     "DSA/Binary Search Tree/Assets",
     "System Design/Fundamentals",
     "Networking/Attachments",
