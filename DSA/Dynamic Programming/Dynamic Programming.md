@@ -536,3 +536,6 @@ If yes, the problem is likely a **Dynamic Programming** problem.
 **Cherry Pickup II** - [[Cherry Pickup II]]
 
 **_DP on Sub sequence_**
+**Subset Sum Problem** - [[Subset Sum Problem]]
+**Partition Equal Subset Sum** - [[Partition Equal Subset Sum]]
+**Partition Array Into Two Arrays to Minimize Sum Difference** - [[Partition Array Into Two Arrays to Minimize Sum Difference]]

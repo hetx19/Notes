@@ -9,6 +9,7 @@
 
 ---
 ### Brute Force Solution
+By using Recursion - [[Recursion]]
 
 **Time Complexity**: O(3<sup>n</sup>)
 **Space Complexity**: O(n)

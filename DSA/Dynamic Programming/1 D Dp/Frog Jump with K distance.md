@@ -14,7 +14,7 @@ Total cost = 10 + 5 = 15.
 
 ---
 ### Brute Force Solution
-By using Recursion - [Recursion](app://obsidian.md/Recursion)
+By using Recursion - [[Recursion]]
 
 **Time Complexity**: O(k<sup>n</sup>)
 **Space Complexity**: O(n)
