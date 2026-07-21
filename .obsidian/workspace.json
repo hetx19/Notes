@@ -11,10 +11,10 @@
             "id": "8095f2cc96262f5c",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "2d43e476297faafb",
@@ -213,11 +214,16 @@
   },
   "active": "8095f2cc96262f5c",
   "lastOpenFiles": [
+    "DSA/Dynamic Programming/Dp on Sequence/0 1 Knapsack.md",
+    "Minimum Coins.md",
+    "DSA/Hashing/Hashing.md",
+    "DSA/Dynamic Programming/Dynamic Programming.md",
+    "DSA/Dynamic Programming/1 D Dp/Frog Jump.md",
+    "explanation.md",
     "DSA/Dynamic Programming/Dp on Sequence/Subset Sum Problem.md",
     "DSA/Dynamic Programming/Dp on Sequence/Partition Array Into Two Arrays to Minimize Sum Difference.md",
     "DSA/Dynamic Programming/assets/Partition Array Into Two Arrays to Minimize Sum Difference.png",
     "DSA/Dynamic Programming/Dp on Sequence/Partition Equal Subset Sum.md",
-    "DSA/Dynamic Programming/Dynamic Programming.md",
     "DSA/Dynamic Programming/Dp on grid/Cherry Pickup II.md",
     "DSA/Dynamic Programming/Dp on grid/Minimum Path Sum.md",
     "DSA/Dynamic Programming/1 D Dp/Frog Jump with K distance.md",
@@ -238,15 +244,11 @@
     "DSA/Dynamic Programming/1 D Dp/House Robber 2.md",
     "DSA/Dynamic Programming/assets/Unique Paths.png",
     "DSA/Dynamic Programming/1 D Dp/House Robber.md",
-    "DSA/Dynamic Programming/1 D Dp/Frog Jump.md",
-    "DSA/Hashing/Hashing.md",
     "DSA/Binary Search Tree/Problems on Binary Search Tree.md",
     "DSA/Binary Search Tree/Largest Binary Search Tree inside Binary Tree.md",
     "DSA/Binary Search Tree/Validate Binary Search Tree.md",
     "DSA/Binary Search Tree/Assets/Largest Binary Search Tree inside Binary Tree.png",
-    "DSA/Binary Search Tree/Recover Binary Search Tree.md",
     "DSA/Binary Search Tree/Assets/Recover Binary Search Tree.png",
-    "DSA/Binary Search Tree/Two Sum in Binary Search Tree.md",
     "DSA/Binary Search Tree/Assets/Two Sum in Binary Search Tree.png",
     "DSA/Binary Search Tree/Assets",
     "System Design/Fundamentals",

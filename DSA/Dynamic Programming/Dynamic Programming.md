@@ -539,3 +539,5 @@ If yes, the problem is likely a **Dynamic Programming** problem.
 **Subset Sum Problem** - [[Subset Sum Problem]]
 **Partition Equal Subset Sum** - [[Partition Equal Subset Sum]]
 **Partition Array Into Two Arrays to Minimize Sum Difference** - [[Partition Array Into Two Arrays to Minimize Sum Difference]]
+0 1 Knapsack - [[0 1 Knapsack]]
+Minimum Coins - [[Minimum Coins]]
