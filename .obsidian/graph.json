@@ -153,6 +153,13 @@
         "a": 1,
         "rgb": 16511087
       }
+    },
+    {
+      "query": "path:DBMS  ",
+      "color": {
+        "a": 1,
+        "rgb": 1689298
+      }
     }
   ],
   "collapse-display": true,
@@ -165,6 +172,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6770100737549036,
+  "scale": 0.6567321636479562,
   "close": true
 }

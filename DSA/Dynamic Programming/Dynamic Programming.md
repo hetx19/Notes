@@ -539,5 +539,17 @@ If yes, the problem is likely a **Dynamic Programming** problem.
 **Subset Sum Problem** - [[Subset Sum Problem]]
 **Partition Equal Subset Sum** - [[Partition Equal Subset Sum]]
 **Partition Array Into Two Arrays to Minimize Sum Difference** - [[Partition Array Into Two Arrays to Minimize Sum Difference]]
+Count Subsets with Sum - [[Count Subsets with Sum]]
+Partitions with Given Difference - [[Partitions with Given Difference]]
 0 1 Knapsack - [[0 1 Knapsack]]
 Minimum Coins - [[Minimum Coins]]
+Target Sum - [[Target Sum]]
+Coin Change II - [[Coin Change II]]
+Unbounded Knapsack - [[Unbounded Knapsack]]
+Rod Cutting - [[Rod Cutting]]
+
+**_DP on  Strings_**
+Longest Common SubSequence - [[Longest Common SubSequence]]
+Print Longest Common Subsequence - [[Print Longest Common Subsequence]]
+Longest Common SubString - [[Longest Common SubString]]
+Longest Palindromic Subsequence - [[Longest Palindromic Subsequence]]

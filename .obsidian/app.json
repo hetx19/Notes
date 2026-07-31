@@ -10,5 +10,6 @@
   },
   "trashOption": "none",
   "alwaysUpdateLinks": false,
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "promptDelete": false
 }
