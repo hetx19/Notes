@@ -1,14 +1,14 @@
-**Problem**: Given a string `s`, find _the longest palindromic **subsequence**'s length in_ `s`.
+**Problem**: Given two strings `word1` and `word2`, return _the minimum number of **steps** required to make_ `word1` _and_ `word2` _the same_.
 
-A **subsequence** is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+In one **step**, you can delete exactly one character in either string.
 
 **Example**:
-**Input**: s = "bbbab"
-**Output**: 4
-**Explanation**: One possible longest palindromic subsequence is "bbbb".
+**Input**: word1 = "sea", word2 = "eat"
+**Output**: 2
+**Explanation**: You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
 
-[Visit Leetcode](https://leetcode.com/problems/longest-palindromic-subsequence/)
-[Visit GFG](https://www.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1)
+[Visit Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/)
+[Visit GFG](https://www.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions0209/1)
 
 ---
 ### Brute Force Solution
@@ -29,7 +29,7 @@ class Solution {
 			return 1 + solve(text1, text2, index1 - 1, index2 - 1);
 		}
 		
-		return max(solve(text1, text2, index1 - 1, index2, dp), solve(text1, text2, index1, index2 - 1));
+		return max(solve(text1, text2, index1 - 1, index2), solve(text1, text2, index1, index2 - 1));
 	}
 	
 	int longestCommonSubsequence(string text1, string text2) {
@@ -39,10 +39,10 @@ class Solution {
 	}
 	
   public:
-	int longestPalindromeSubseq(string s) {
-		string reversedString = s;
-		reverse(reversedString.begin(), reversedString.end());
-		return longestCommonSubsequence(s, reversedString);
+	int minDistance(string word1, string word2) {
+		int n1 = word1.size(), n2 = word2.size();
+		
+		return (n1 + n2 - (2 * longestCommonSubsequence(word1, word2)));
 	}
 };
 ```
@@ -78,12 +78,12 @@ class Solution {
 		
 		return solve(text1, text2, n1, n2, dp);
 	}
-
+	
   public:
-	int longestPalindromeSubseq(string s) {
-		string reversedString = s;
-		reverse(reversedString.begin(), reversedString.end());
-		return longestCommonSubsequence(s, reversedString);
+	int minDistance(string word1, string word2) {
+		int n1 = word1.size(), n2 = word2.size();
+		
+		return (n1 + n2 - (2 * longestCommonSubsequence(word1, word2)));
 	}
 };
 ```
@@ -123,10 +123,10 @@ class Solution {
 	}
 	
   public:
-	int longestPalindromeSubseq(string s) {
-		string reversedString = s;
-		reverse(reversedString.begin(), reversedString.end());
-		return longestCommonSubsequence(s, reversedString);
+	int minDistance(string word1, string word2) {
+		int n1 = word1.size(), n2 = word2.size();
+		
+		return (n1 + n2 - (2 * longestCommonSubsequence(word1, word2)));
 	}
 };
 ```
@@ -140,7 +140,7 @@ class Solution {
 ```cpp
 class Solution {
   private:
-	int longestPalindromeSubseq(string text1, string text2) {
+	int longestCommonSubsequence(string text1, string text2) {
 		int n1 = text1.size(), n2 = text2.size();
 		vector<int> prev(n2 + 1, 0), current(n2 + 1, 0);
 		
@@ -163,10 +163,10 @@ class Solution {
 	}
 	
   public:
-	int longestPalindromeSubseq(string s) {
-		string reversedString = s;
-		reverse(reversedString.begin(), reversedString.end());
-		return longestCommonSubsequence(s, reversedString);
+	int minDistance(string word1, string word2) {
+		int n1 = word1.size(), n2 = word2.size();
+		
+		return (n1 + n2 - (2 * longestCommonSubsequence(word1, word2)));
 	}
 };
 ```
