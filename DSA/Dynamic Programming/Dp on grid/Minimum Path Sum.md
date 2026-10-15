@@ -56,7 +56,7 @@ class Solution {
   private:
 	int solve(vector<vector<int>>& grid, int row, int col, vector<vector<int>>& dp) {
 		if (row == 0 && col == 0) {
-			return grid[0][0];
+			return dp[row][col] = grid[0][0];
 		}
 		
 		if (row < 0 || col < 0) {

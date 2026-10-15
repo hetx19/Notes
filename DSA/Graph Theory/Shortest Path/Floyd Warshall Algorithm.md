@@ -1,4 +1,4 @@
-**Problem**: You are given a weighted **directed** graph, represented by an adjacency matrix, `dist[][]` of size **n x n**, where `dist[i][j]` represents the weight of the edge from **node i to node j**. If there is no direct edge, `dist[i][j]` is set to a large value (i.e., **108**) to represent infinity.  
+**Problem**: You are given a weighted **directed** graph, represented by an adjacency matrix, `dist[][]` of size **n x n**, where `dist[i][j]` represents the weight of the edge from **node i to node j**. If there is no direct edge, `dist[i][j]` is set to a large value (i.e., **10<sup>8</sup>**) to represent infinity.  
 The graph may contain **negative edge weights**, but it does not contain any **negative weight cycles**.
 
 Your task is to find the **shortest distance** between every pair of nodes **i** and **j** in the graph.

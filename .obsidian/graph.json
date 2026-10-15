@@ -146,6 +146,13 @@
         "a": 1,
         "rgb": 1689298
       }
+    },
+    {
+      "query": "path:\"System Design\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 4342171
+      }
     }
   ],
   "collapse-display": true,
@@ -158,6 +165,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7267936115948661,
+  "scale": 0.5596638556414394,
   "close": true
 }

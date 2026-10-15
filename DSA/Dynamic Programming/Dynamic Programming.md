@@ -555,4 +555,33 @@ Longest Common SubString - [[Longest Common SubString]]
 Longest Palindromic Subsequence - [[Longest Palindromic Subsequence]]
 Minimum Insertions to Make String Palindrome - [[Minimum Insertions to Make String Palindrome]]
 Delete Operation for Two Strings - [[Delete Operation for Two Strings]]
-[[Shortest Common Supersequence]]
+Shortest Common Supersequence - [[Shortest Common Supersequence]]
+Distinct Subsequences - [[Distinct Subsequences]]
+Edit Distance - [[Edit Distance]]
+Wildcard Matching - [[Wildcard Matching]]
+
+**_DP on Stocks_**
+Best Time to Buy and Sell Stocks II - [[Best Time to Buy and Sell Stocks - II]]
+Best Time to Buy and Sell Stocks II| - [[Best Time to Buy and Sell Stocks - III]]
+Best Time to Buy and Sell Stocks IV - [[Best Time to Buy and Sell Stocks IV]]
+Best Time to Buy and Sell Stock with Cooldown - [[Best Time to Buy and Sell Stock with Cooldown]]
+Best Time to Buy and Sell Stock with Transaction Fee - [[Best Time to Buy and Sell Stock with Transaction Fee]]
+
+**_DP on Longest Increasing Subsequence_**
+Longest Increasing Subsequence - [[Longest Increasing Subsequence]]
+Printing Longest increasing Subsequence - [[Printing Longest increasing Subsequence]]
+Largest Divisible Subset - [[Largest Divisible Subset]]
+Largest Bitonic Subsequence - [[Largest Bitonic Subsequence]]
+Number of Longest Increasing Subsequence - [[Number of Longest Increasing Subsequence]]
+
+**_Partition DP_**
+Matrix Chain Multiplication - [[Matrix Chain Multiplication]]
+Minimum cost to cut the stick - [[Minimum cost to cut the stick]]
+Burst balloons - [[Burst balloons]]
+Different Ways to Evaluate a Boolean Expression - [[Different Ways to Evaluate a Boolean Expression]]
+Palindrome partitioning II - [[Palindrome partitioning II]]
+Partition Array for Maximum Sum - [[Partition Array for Maximum Sum]]
+
+**_DP on Squares_**
+Maximal Rectangle - [[Maximal Rectangle]]
+Count Square Submatrices with All Ones - [[Count Square Submatrices with All Ones]]
